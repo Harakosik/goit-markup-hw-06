@@ -378,31 +378,50 @@
         <div>
           <form class="contact-form">
             <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+            <label class="contact" for="name">Имя</label>
             <input
               type="text"
               class="contact-form-input"
               name="user_name"
+              id="name"
               placeholder=""
               required
               minlength="5"
               pattern="[a-zA-Za-яА-Я]+"
             />
-            <input
-              type="email"
-              class="contact-form-input"
-              name="user_email"
-              placeholder=""
-              required
-            />
+            <label class="contact" for="tel">Телефон</label>
             <input
               type="tel"
               class="contact-form-input"
               name="user_phone"
+              id="tel"
               placeholder=""
               required
               pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
               title="xxx-xxx-xx-xx"
             />
+            <label class="contact" for="email">Почта</label>
+            <input
+              type="email"
+              class="contact-form-input"
+              name="user_email"
+              id="email"
+              placeholder=""
+              required
+            />
+            <label class="coment" for="coment">Комментарий</label>
+            <textarea
+              class="placeholder"
+              name="coment"
+              id="coment"
+              rows="10"
+              placeholder="Введите текст"
+            ></textarea>
+            <input type="checkbox" name="topic" value="" id="check" />
+            <label class="check" for="check"
+              >Соглашаюсь с рассылкой и принимаю
+              <label class="dogovor" href="./index.html" for="">Условия договора</label>
+            </label>
             <button type="submit" class="contact-form-btn">Отправить</button>
           </form>
         </div>
